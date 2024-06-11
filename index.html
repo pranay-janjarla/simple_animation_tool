@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Animation Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ide-container">
+        <div class="sidebar">
+            <h2>Customize Animation</h2>
+            <div class="control-group">
+                <label for="element-selector">CSS Selector:</label>
+                <input type="text" id="element-selector" placeholder="e.g., .my-div, #my-button">
+            </div>
+            <div class="control-group">
+                <label for="animation-type">Choose Animation:</label>
+                <select id="animation-type">
+                    <option value="scale">Scale</option>
+                    <option value="rotate">Rotate</option>
+                    <option value="translateX">TranslateX</option>
+                    <option value="translateY">TranslateY</option>
+                    <option value="opacity">Opacity</option>
+                </select>
+                <button class="secondary-button" onclick="addAnimationType()">Add Animation Type</button>
+            </div>
+            <div id="selected-animations-container"></div>
+            <button class="primary-button" onclick="applyAnimation()">Apply Animation</button>
+        </div>
+        <div class="main-content">
+            <h1>HTML Animation Generator</h1>
+            <textarea id="html-input" placeholder="Paste your HTML code here"></textarea>
+            <button class="primary-button" onclick="renderHTML()">Render HTML</button>
+            <div id="rendered-html"></div>
+            <div class="code-display">
+                <h2>Generated CSS Code</h2>
+                <pre id="css-code"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
