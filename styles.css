@@ -1,5 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Source Code Pro';
     background-color: #1e1e1e;
     color: #d4d4d4;
     margin: 0;
